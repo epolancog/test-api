@@ -1,0 +1,9 @@
+# Ignore compiled classes and JARs
+*.class
+*.jar
+
+# Maven target directory
+/target/
+
+# Environment files
+.env
