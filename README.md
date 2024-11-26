@@ -20,8 +20,8 @@ Ensure the following are installed on your system:
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/<your-username>/<repo-name>.git
-cd <repo-name>
+git clone https://github.com/epolancog/test-api.git
+cd test-api
 ```
 
 ### 2. Prepare the environment variables
