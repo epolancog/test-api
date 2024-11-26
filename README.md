@@ -32,25 +32,43 @@ cp .env.example .env
 ```
 Edit the .env file with your desired values, if needed. The default values should work for most cases.
 
+### 3. Build the JAR file
 
-### 3. Build the Docker images
+Before building and running the application in Docker, you need to build the JAR file. Make sure you have Java and Maven installed on your system.
+
+Run the following command to build the JAR file:
+
+```bash
+mvn clean package
+```
+This command will run the tests and create the JAR file in the `target/` directory, which will be used by the Docker container.
+
+### 4. Build the Docker images
 
 Use Docker compose to build the two images at the same time - the app itself and the PostgreSQL.
 
+```bash
+docker-compose build
+```
+
+
+### 5. Run the application
+
+Use Docker Compose.
+
+**NOTE:** Make sure there are no other servers running on the 8080 and 5432 ports.
 
 ```bash
 docker-compose up
 ```
 
+---
+# Running Tests
 
-### 4. Run the application
-
-Use Docker Compose.
-
-**NOTE:** Make sure there is no other server running on the 8080 and 5432 ports.
+You can run the unit tests and other tests included in the project using Maven. Here’s how:
 
 ```bash
-docker-compose build
+mvn test
 ```
 
 
