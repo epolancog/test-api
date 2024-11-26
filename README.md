@@ -144,6 +144,12 @@ docker system prune -a
 
 ---
 
+## Pending to add
+* Increase Test coverage (Unit, Integration and E2E)
+* Add authentication feature
+
+---
+
 ## Contributions
 
 Feel free to submit pull requests or issues if you’d like to contribute or have suggestions.
